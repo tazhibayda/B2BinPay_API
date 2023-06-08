@@ -31,10 +31,4 @@ func startFlag() {
 
 	fmt.Println("Access token:", attributes.Access)
 	fmt.Println("Access token expiration:", attributes.AccessExpiredAt)
-
-	wallet, err := client.GetWalletById(20, attributes.Access)
-	if err != nil {
-		panic(err)
-	}
-	fmt.Println("Wallet ", wallet)
 }
